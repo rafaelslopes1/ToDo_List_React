@@ -1,0 +1,106 @@
+.wrapper {
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.createTaskForm {
+  display: grid;
+  column-gap: 8px;
+  justify-content: center;
+  margin-top: calc(0px - 3.75rem);
+  width: 100%;
+  grid-template-columns: 39.875rem 6rem;
+}
+
+.createTaskForm input {
+  background: var(--gray-500);
+  color: var(--gray-100);
+
+  height: 3.375rem;
+  border: 2px solid var(--gray-700);
+  padding: 1rem;
+
+  border-radius: 8px;
+}
+
+.createTaskForm input:focus {
+  border: 1px solid var(--purple-dark);
+}
+
+.createTaskForm button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+
+  background: var(--blue-dark);
+  color: var(--gray-100);
+  font-size: 0.875rem;
+
+  border: 0;
+  padding: 1rem;
+
+  border-radius: 8px;
+}
+
+.createTaskForm button:hover {
+  background: var(--blue);
+  transition: background-color 100ms;
+}
+
+.statusCounters {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 0 1.5rem;
+}
+
+.statusCounter {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.statusCounter span {
+  background: var(--gray-400);
+  color: var(--gray-100);
+  padding: 2px 8px;
+  margin: 8px;
+  border-radius: 999px;
+}
+
+.createdTasks {
+  color: var(--blue);
+}
+
+.closedTasks {
+  color: var(--purple);
+}
+
+.noTasks {
+  color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  
+  border-radius: 8px;
+  border-top: 1px solid var(--gray-400);
+}
+
+.noTasks img {
+  margin-bottom: 1rem;
+}
+
+.withTasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .createTaskForm {
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+}
